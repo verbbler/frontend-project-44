@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
 
-const isEven = () => {
+const evenGame = () => {
   console.log("Welcome to the Brain Games!");
   const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
@@ -56,4 +56,4 @@ const isEven = () => {
   }
 };
 
-isEven();
+evenGame();
