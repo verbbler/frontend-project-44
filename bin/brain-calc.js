@@ -25,7 +25,7 @@ const calcGame = () => {
       arr.push(answer);
     } else {
       console.log(
-        `'${answer}' is wrong answer :(. Correct answer was '${correctAnswer}'. \n Lets try again, ${name}!`
+        `'${answer}' is wrong answer :(. Correct answer was '${correctAnswer}'. \n Let's try again, ${name}!`
       );
       arr.length = 0;
       break;
