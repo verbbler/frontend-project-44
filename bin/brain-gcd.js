@@ -14,7 +14,7 @@ const gcd = () => {
     let number2 = Math.floor(Math.random() * 100);
 
     const answer = readlineSync.question(
-      `Find  the greatest common divisor of given numbers. \n Question: ${number1} ${number2} \n Your answer: `
+      `Find the greatest common divisor of given numbers. \n Question: ${number1} ${number2} \n Your answer: `
     );
     function correctAnswer(number1, number2) {
       if (number2 > 0) {
