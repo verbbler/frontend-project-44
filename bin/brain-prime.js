@@ -3,8 +3,8 @@
 import readlineSync from 'readline-sync';
 
 function isPrime(num) {
+  /* eslint-disable */
   for (let i = 2; i < num; i++) {
-    /* eslint-disable */
     if (num % i === 0) return false;
   }
   return num !== 1;
