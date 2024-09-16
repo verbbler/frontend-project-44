@@ -1,22 +1,20 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-
-
+import readlineSync from 'readline-sync';
 
 const progression = () => {
-  console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
-  let arr = [];
-  let progressionArr = [];
+  const arr = [];
+  const progressionArr = [];
 
   const makeProgression = () => {
-    let randomNumber = ["5", "6", "7", "8", "9", "10"];
-    let randomNumIndex = Math.floor(Math.random() * randomNumber.length);
-    let progressionLength = randomNumber[randomNumIndex];
-    let startOfProgression = Math.floor(Math.random() * 100);
+    const randomNumber = ['5', '6', '7', '8', '9', '10'];
+    const randomNumIndex = Math.floor(Math.random() * randomNumber.length);
+    const progressionLength = randomNumber[randomNumIndex];
+    const startOfProgression = Math.floor(Math.random() * 100);
     let pointOfProgression = Math.floor(Math.random() * 10);
     progressionArr.push(startOfProgression);
 
@@ -31,24 +29,23 @@ const progression = () => {
     progressionArr.length = 0;
     makeProgression();
 
-    let hiddenNum =
-      progressionArr[Math.floor(Math.random() * progressionArr.length)];
+    const hiddenNum = progressionArr[Math.floor(Math.random() * progressionArr.length)];
 
-    let hiddenProgression = progressionArr
+    const hiddenProgression = progressionArr
       .toString()
-      .replace(hiddenNum, "..")
-      .replaceAll(",", " ");
+      .replace(hiddenNum, '..')
+      .replaceAll(',', ' ');
 
-    let answer = readlineSync.question(
-      `What number is missing in the progression? \nQuestion: ${hiddenProgression} \nYour answer: `
+    const answer = readlineSync.question(
+      `What number is missing in the progression? \nQuestion: ${hiddenProgression} \nYour answer: `,
     );
 
     if (answer == hiddenNum) {
-      console.log("Correct!");
+      console.log('Correct!');
       arr.push(answer);
     } else {
       console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${hiddenNum}'. Let's try again, ${name}!`
+        `'${answer}' is wrong answer ;(. Correct answer was '${hiddenNum}'. Let's try again, ${name}!`,
       );
       arr.length = 0;
       break;
