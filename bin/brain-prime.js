@@ -20,7 +20,7 @@ const prime = () => {
     const randomNumber = Math.floor(Math.random() * 1000);
 
     const answer = readlineSync.question(
-      `Answer 'yes' if given number is prime. Otherwise answer 'no'. \nQuestion: ${randomNumber} \nYour Answer: `,
+      `Answer "yes" if given number is prime. Otherwise answer "no". \nQuestion: ${randomNumber} \nYour Answer: `,
     );
     const correctAnswer = isPrime(randomNumber) ? "yes" : "no";
 
@@ -29,7 +29,7 @@ const prime = () => {
       arr.push(answer);
     } else {
       console.log(
-        `'${answer}' is wrong answer :(. Correct answer was '${correctAnswer}'. \n Let's try again, ${name}!`
+        `"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}". \n Let's try again, ${name}!`
       );
       arr.length = 0;
       break;

@@ -13,7 +13,7 @@ const evenGame = () => {
     const evenORodd = number % 2 === 0 ? 'Even' : 'Odd';
 
     const question = readlineSync.question(
-      `Answer 'yes' if the number is even, otherwise answer 'no'. \n Question: ${number} \n Your answer: `,
+      `Answer "yes" if the number is even, otherwise answer "no". \n Question: ${number} \n Your answer: `,
     );
 
     if (evenORodd === 'Odd') {
@@ -23,14 +23,14 @@ const evenGame = () => {
       }
       if (question === 'yes') {
         console.log(
-          `'yes' is wrong answer ;(. Correct answer was 'no'. \n Let's try again, ${name}!`,
+          `"yes" is wrong answer ;(. Correct answer was "no". \n Let's try again, ${name}!`,
         );
         array.length = 0;
         break;
       }
       if (question !== 'yes' && question !== 'no') {
         console.log(
-          `'${question}' is wrong answer ;(. Correct answer was 'no'. \n Let's try again, ${name}!`,
+          `'${question}' is wrong answer ;(. Correct answer was "no". \n Let's try again, ${name}!`,
         );
         break;
       }
@@ -42,14 +42,14 @@ const evenGame = () => {
       }
       if (question === 'no') {
         console.log(
-          `'no' is wrong answer ;(. Correct answer was 'yes'. \n Let's try again, ${name}!`,
+          `"no" is wrong answer ;(. Correct answer was "yes". \n Let's try again, ${name}!`,
         );
         array.length = 0;
         break;
       }
       if (question !== 'yes' && question !== 'no') {
         console.log(
-          `'${question}' is wrong answer ;(. Correct answer was 'yes'. \n Let's try again, ${name}!`,
+          `'${question}' is wrong answer ;(. Correct answer was "yes". \n Let's try again, ${name}!`,
         );
         break;
       }

@@ -45,7 +45,7 @@ const progression = () => {
       arr.push(answer);
     } else {
       console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${hiddenNum}'. Let's try again, ${name}!`,
+        `"${answer}" is wrong answer ;(. Correct answer was "${hiddenNum}". Let's try again, ${name}!`,
       );
       arr.length = 0;
       break;
