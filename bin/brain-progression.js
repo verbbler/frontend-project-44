@@ -1,4 +1,8 @@
+#!/usr/bin/env node
+
 import readlineSync from "readline-sync";
+
+
 
 const progression = () => {
   console.log("Welcome to the Brain Games!");

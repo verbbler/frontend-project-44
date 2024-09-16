@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from "readline-sync";
 
 const calcGame = () => {
@@ -28,7 +30,6 @@ const calcGame = () => {
       arr.length = 0;
       break;
     }
-    // console.log(correctAnswer);
   }
   if (arr.length === 3) console.log(`Congratulations, ${name}!`);
 };
