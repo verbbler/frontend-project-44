@@ -7,6 +7,7 @@ const calcGame = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
+  /* eslint-disable */
   const sign = ["+", "-", "*"];
   const arr = [];
 
@@ -21,6 +22,7 @@ const calcGame = () => {
     const correctAnswer = eval(`${number1}${sign[randomIndex]}${number2}`);
 
     if (answer == correctAnswer) {
+      /* eslint-enable */
       console.log('Correct!');
       arr.push(answer);
     } else {

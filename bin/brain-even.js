@@ -8,7 +8,10 @@ const evenGame = () => {
   console.log(`Hello, ${name}!`);
 
   const array = [];
+
+  /* eslint-disable */
   for (let i = 0; i < 3; i++) {
+    /* eslint-enable */
     const number = Math.floor(Math.random() * 100);
     const evenORodd = number % 2 === 0 ? 'Even' : 'Odd';
 

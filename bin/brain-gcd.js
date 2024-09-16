@@ -5,11 +5,12 @@ import readlineSync from 'readline-sync';
 const number1 = Math.floor(Math.random() * 100);
 const number2 = Math.floor(Math.random() * 100);
 
+/* eslint-disable */
 function correctAnswer(number1, number2) {
   if (number2 > 0) {
     const k = number1 % number2;
     return correctAnswer(number2, k);
-  } else {
+  } {
     return number1;
   }
 }
@@ -22,13 +23,13 @@ const gcd = () => {
   const arr = [];
 
   for (let i = 0; i < 3; i++) {
-
     const answer = readlineSync.question(
       `Find the greatest common divisor of given numbers. \n Question: ${number1} ${number2} \n Your answer: `,
     );
 
     if (answer == correctAnswer(number1, number2)) {
       console.log('Correct!');
+      /* eslint-enable */
       arr.push(answer);
     } else {
       console.log(

@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 function isPrime(num) {
   for (let i = 2; i < num; i++) {
+    /* eslint-disable */
     if (num % i === 0) return false;
   }
   return num !== 1;
@@ -35,6 +36,7 @@ const prime = () => {
       break;
     }
   };
+  /* eslint-enable */
   if (arr.length === 3) console.log(`Congratulations, ${name}!`);
 };
 

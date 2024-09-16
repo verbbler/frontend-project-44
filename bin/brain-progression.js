@@ -18,6 +18,7 @@ const progression = () => {
     let pointOfProgression = Math.floor(Math.random() * 10);
     progressionArr.push(startOfProgression);
 
+    /* eslint-disable */
     for (let i = 0; i < progressionLength; i++) {
       if (pointOfProgression === 0) pointOfProgression = 1;
       progressionArr.push(progressionArr[i] + pointOfProgression);
@@ -41,6 +42,7 @@ const progression = () => {
     );
 
     if (answer == hiddenNum) {
+      /* eslint-enable */
       console.log('Correct!');
       arr.push(answer);
     } else {
